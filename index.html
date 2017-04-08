@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .container {
+            background-color:greenyellow;
+            width: 400px;
+            height: 400px;
+            margin: 10px auto;
+            position: relative;
+        }
+        /* center element method 1 --TEXT ALIGN-- */
+        .con1 {
+            text-align: center;
+        }
+
+        .child1 {
+            display: inline-block;
+            background-color: lightseagreen;
+        }
+         /* center element method 2 --POSITION USING TRANSFORM-- */
+
+     .con2{
+         position: relative;
+
+     }
+     .child2{
+         position: absolute;
+         top:50%;
+         left: 50%;
+         transform: translate(  -50% , -50% );
+     }
+    </style>
+</head>
+
+<body>
+
+    <div class="container con1">
+        <h1 class="child1">IT </h1>
+     
+    </div>
+
+    <div class="container con2">
+        <h1 class="child2">IS </h1>
+    </div>
+
+</body>
+
+</html>
